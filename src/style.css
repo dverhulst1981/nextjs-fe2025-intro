@@ -1,0 +1,51 @@
+@import "https://meyerweb.com/eric/tools/css/reset/reset.css";
+header,
+footer {
+  text-align: center;
+  border-top: 1px solid black;
+  padding: 1rem;
+  background-color: lightgrey;
+}
+header {
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+h2 {
+  margin-bottom: 0.5rem;
+  background-color: yellow;
+}
+footer {
+  color: black;
+}
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+main {
+  padding: 2rem;
+}
+h1 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cocktails {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    li {
+      div {
+        aspect-ratio: 1/1;
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
